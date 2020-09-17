@@ -19,6 +19,8 @@
   <%= f.label :link_to_image  %>
   <%= f.text_field :img_url  %>
   <br>
+  <%= f.label :dog %>
+  <%= f.collection_select :dog_id, Dog.all, :id, :name %>
   
   <%= f.submit %>
 
